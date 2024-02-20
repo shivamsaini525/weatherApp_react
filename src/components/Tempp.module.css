@@ -1,0 +1,26 @@
+.app{
+    background-color: #c1c1c1;
+    box-shadow: 44px 49px 60px #00000041,inset -20px -20px 60px #ffffff40;
+    padding-top: 39px;
+    padding-bottom: 50px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+
+}
+.search{
+    border-radius: 10px;
+
+}
+.citylogo{
+    display: flex;
+    
+}
+svg {
+    height: 53px;
+    width: 34px;
+}
+
+.city{
+    /* padding-right: 20px; */
+
+}
