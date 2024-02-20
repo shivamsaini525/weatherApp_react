@@ -13,7 +13,7 @@ const Tempp=()=>{
             const resJson =await response.json();
             
             setCity(resJson.main)
-            console.log(resJson.main)
+            
 
         }
         fetchApi()
@@ -22,7 +22,7 @@ const Tempp=()=>{
         <>
         <div className={`${style.app} container`}>
           <div className="">
-                <input type="search"  className={`${style.search} p-2`} 
+                <input type="search" value={search} className={`${style.search} p-2`} 
                 onChange={ (event)=>{
                     setSearch(event.target.value)
                 }}
@@ -35,8 +35,8 @@ const Tempp=()=>{
                   <h1 className={`${style.city}`}>{search}</h1> 
                 </div>
                 
-                <h2> {city.temp} C</h2>
-                <p className="pt-3">Min Temp <b><i>{city.temp_min}</i></b>  Max Temp <b><i>{city.temp_max}</i></b></p>
+                <h2> {city.temp} °Cel</h2>
+                <p className="pt-3">Min Temp <b><i>{city.temp_min} °C</i></b>  Max Temp <b><i>{city.temp_max} °C</i></b></p>
                 <p className="">pressure <i>{city.pressure}</i> humidity <i>{city.humidity}</i> </p>
             </div>)
            }
